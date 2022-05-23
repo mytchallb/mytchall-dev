@@ -20,6 +20,7 @@ module.exports = function (eleventyConfig) {
         }).use(markdownItAnchor)
     );
 
+
     // Define passthrough for assets
     eleventyConfig.addPassthroughCopy("assets");
 
