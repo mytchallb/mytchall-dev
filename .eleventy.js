@@ -20,6 +20,17 @@ module.exports = function (eleventyConfig) {
         }).use(markdownItAnchor)
     );
 
+    // Copy Static Files to /_Site
+    eleventyConfig.addPassthroughCopy({
+        "./src/admin/config.yml": "./admin/config.yml",
+        "./node_modules/alpinejs/dist/cdn.min.js": "./static/js/alpine.js",
+        "./node_modules/prismjs/themes/prism-tomorrow.css":
+        "./static/css/prism-tomorrow.css",
+    });
+
+    // Copy Image Folder to /_site
+    eleventyConfig.addPassthroughCopy("./src/static/img");
+
 
     // Define passthrough for assets
     eleventyConfig.addPassthroughCopy("assets");
