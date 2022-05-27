@@ -51,11 +51,9 @@ layout: base.njk
         <img src="{{ image }}" alt="{{ imageAlt }}"/>
     {% endif %}
     {{ content | safe }}
+    <div class="block w-full h-1 border-solid border-b-1 border-gray-700"></div>
     {% include "social.njk" %}
-    <h5 class="font-bold">Comments</h5>
-    <p>This comment thread directly maps to a discussion on GitHub, so you can also
-        <a href="https://github.com/mytchallb/mytchall-dev/discussions" target="_blank">comment there</a>
-        if you prefer.</p>
+    <h5 class="font-bold">Add your thoughts</h5>
     <script
         src="https://giscus.app/client.js"
         data-repo="mytchallb/mytchall-dev"
@@ -71,6 +69,9 @@ layout: base.njk
         data-loading="lazy"
         crossorigin="anonymous"
         async></script>
+    <p class="text-sm">Comments are created as a discussion on GitHub, so you could
+        <a href="https://github.com/mytchallb/mytchall-dev/discussions" target="_blank">comment there</a>
+        as well.</p>
     <div class="additions flex flex-col sm:flex-row gap-3 mt-6 px-4 w-full">
         {% set previousPost = collections.posts | getPreviousCollectionItem(page) %}
         {% set nextPost = collections.posts | getNextCollectionItem(page) %}
