@@ -160,9 +160,6 @@ To test it out, edit your `src/index.html` folder and add a class name like so:
 <h1 class="text-cyan-500">Test</h1>
 ```
 
-## Conclusion
-
-Yep
 
 ### * Bonus *
 

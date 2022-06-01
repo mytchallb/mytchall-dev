@@ -111,5 +111,3 @@ These examples work for HTML5 games in browsers that support web3.js.
 NFT’s open a wide variety of possibilities within the gaming industry, and with the range of tools and frameworks available, anyone can create a NFT-compatible game and join in on this booming industry, even using beginner-friendly tools like GameMaker Studio.
 
 _Note: This article was first published on [Medium](https://medium.com/@mytchall.b/using-games-with-nfts-and-web3-js-610fd5fbd562)_
-
-> **_NOTE:_**  The note content.
